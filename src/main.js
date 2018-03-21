@@ -5,13 +5,23 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
+import moment from 'moment'
+Vue.filter('dateFormat',function(dataStr, pattern='YYYY-MM-DD HH:mm:ss'){
+ return moment(dataStr).format(pattern)
+})
+
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
-import {Header, Swipe, SwipeItem} from 'mint-ui'
+Vue.http.options.root = 'http://vue.studyit.io'
+Vue.http.options.emulateJSON = true
+
+import {Header, Swipe, SwipeItem, Button, Lazyload} from 'mint-ui'
 Vue.component(Header.name,Header)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
+Vue.component(Button.name, Button)
+Vue.use(Lazyload)
 
 import './lib/mui/css/mui.css'
 import './lib/mui/css/icons-extra.css'
