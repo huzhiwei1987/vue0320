@@ -12,7 +12,9 @@ export default {
 </script>
 
 <style>
-
+  h2{
+    color: blueviolet;
+  }
 </style>
 
 
