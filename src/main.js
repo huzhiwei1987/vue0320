@@ -1,4 +1,4 @@
-// 入口文件
+﻿// 入口文件 修改了1232323
 import Vue from 'vue'
 
 import VueRouter from 'vue-router'
@@ -24,7 +24,7 @@ Vue.http.options.emulateJSON = true
 // Vue.component(Swipe.name, Swipe)
 // Vue.component(SwipeItem.name, SwipeItem)
 // Vue.component(Button.name, Button)
-// Vue.use(Lazyload)
+// Vue.use(Lazyload)   
 
 import Mint from 'mint-ui'
 Vue.use(Mint)
